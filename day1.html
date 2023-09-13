@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>tutorial</title>
+    </head>
+
+    <body>
+        <div id="banner" class="banner">
+            <h1 id="bannerLabel" class="bannerLabel">Game Shop</h1>
+        </div>
+
+        <div class="mini-bar">
+            <div class="mini-bar-item">Action</div>
+            <div class="mini-bar-item">Adventure</div>
+            <div class="mini-bar-item">RPG</div>
+            <div class="mini-bar-item">Strategy</div>
+            <div class="mini-bar-item">Simulation</div>
+            <div class="mini-bar-item">Puzzle</div>
+            <div class="mini-bar-item">Sports</div>
+            <div class="mini-bar-item">Racing</div>
+            <div class="mini-bar-item">Fighting</div>
+            <div class="mini-bar-item">Shooter</div>
+            <div class="mini-bar-item">Horror</div>
+        </div>
+
+        <div class="relativeItems">
+            <div class="relativeDiv">
+
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<style>
+
+    body{
+        margin: 0%;
+        background-color: white;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+    .banner{
+        position: fixed;
+        height: 10%;
+        width: 100%;
+        background-color: white;
+        z-index: 10;
+        border-bottom: 1px solid lightgray;
+    }
+    .bannerLabel{
+        position: absolute;
+        top: 33%; 
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        font-size: large;
+        color: black;
+        cursor: pointer;
+    }
+
+    .mini-bar {
+        position: absolute;
+        margin: auto;
+        top: 10%;
+        width: 100%;
+        display: flex; /* Use flexbox to arrange items in a row */
+        align-items: center; /* Vertically center items within the container */
+        background-color: white; /* Background color for the mini bar */
+        color: white; /* Text color for the items */
+        padding: 8px; /* Add padding around the items */
+        justify-content: space-between;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .mini-bar-item {
+        margin-right: 15px; /* Add some spacing between items */
+        margin-left: 15px;
+        color: black;
+        font-weight: 500;
+        font-family: monospace;
+        font-size: large;
+        cursor: pointer;
+    }
+
+    .mini-bar-item:hover {
+        color: red;
+    }
+
+    .relativeItems{
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        bottom: 0;
+        top: 16%;
+        background-color: #FF5733;
+    }
+    
+    .relativeDiv{
+        position: relative;
+        height: 200px;
+        width: 100%;
+        background-color: transparent;
+    }
+</style>
