@@ -6,7 +6,8 @@
 
     <body>
         <div id="banner" class="banner">
-            <h1 id="bannerLabel" class="bannerLabel">Game Shop</h1>
+            <img class="bannerIcon" src="icon.png">
+            <!-- <h1 id="bannerLabel" class="bannerLabel">Game Shop</h1> -->
         </div>
 
         <div class="mini-bar">
@@ -25,9 +26,47 @@
 
         <div class="relativeItems">
             <div class="relativeDiv">
-
+                <img class="gameImg" src="/gamecover/1.png" alt="A beautiful landscape">
+                <div>
+                    <p class="middleTop">FIFA 23<p>
+                    <p class="middleText">FIFA 23 is a football video game published by EA Sports. It is the 30th installment in the FIFA series that is developed by EA Sports, the final installment under the FIFA banner, and released worldwide on 30 September 2022 for Nintendo Switch, PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S.</p>
+                    <div class="middleDiv">
+                        <p class="middleText2">Buy now for</p>
+                        <button class="button">
+                          49.99 USD
+                        </button>
+                        
+                    </div>
+                </div>
             </div>
-            
+            <div class="relativeDiv">
+                <img class="gameImg" src="/gamecover/2.png" alt="A beautiful landscape">
+                <div>
+                    <p class="middleTop">NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS<p>
+                    <p class="middleText">NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS is an action/fighting game that includes ninja battles and different story modes. Connections features the largest roster out of all Naruto Ultimate Ninja STORM series with new playable characters! PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S.</p>
+                    <div class="middleDiv">
+                        <p class="middleText2">Buy now for</p>
+                        <button class="button">
+                          49.99 USD
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="relativeDiv">
+                <img class="gameImg" src="/gamecover/4.png" alt="A beautiful landscape">
+                <div>
+                    <p class="middleTop">The Legend of Zelda<p>
+                    <p class="middleText">The Legend of Zelda is an action-adventure game franchise created by the Japanese game designers Shigeru Miyamoto and Takashi Tezuka. It is primarily developed and published by Nintendo, although some portable installments and re-releases have been outsourced to Flagship, Vanpool, and Grezzo.  PlayStation 4, PlayStation 5, Windows, Xbox One and Xbox Series X/S.</p>
+                    <div class="middleDiv">
+                        <p class="middleText2">Buy now for</p>
+                        <button class="button">
+                          49.99 USD
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
         </div>
     </body>
 </html>
@@ -37,17 +76,27 @@
     body{
         margin: 0%;
         background-color: white;
-        overflow-y: hidden;
         overflow-x: hidden;
     }
-    .banner{
+
+    .banner {
         position: fixed;
         height: 10%;
         width: 100%;
         background-color: white;
         z-index: 10;
-        border-bottom: 1px solid lightgray;
+        display: flex; /* Use flexbox to center content */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+        border-bottom: solid 1px lightgray;
     }
+
+    .bannerIcon {
+        /* Center the icon both horizontally and vertically */
+        width: 50px; height: 50px;
+        margin: auto;
+    }
+
     .bannerLabel{
         position: absolute;
         top: 33%; 
@@ -93,13 +142,87 @@
         width: 100%;
         bottom: 0;
         top: 16%;
-        background-color: #FF5733;
+        background-color: #e3e3e3;
     }
     
     .relativeDiv{
         position: relative;
         height: 200px;
-        width: 100%;
-        background-color: transparent;
+        width: 98%;
+        background-color: white;
+        display: flex;
+        margin-top: 15px;
+        border-radius: 15px;
+        margin-left: 10px;
     }
+
+    .gameImg{
+        position: relative;
+        width: 200px; /* Set the width of the image directly */
+        height: 190px;
+        margin-left: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border: solid 1px #e3e3e3;
+        border-radius: 6px;
+    }
+      
+    .middleDiv{
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+    
+    .middleTop {
+        color: black;
+        font-size: 26px;
+        margin: 0; /* Add this line to remove margin */
+        margin-left: 5px;
+        margin-top: 2px;
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+        padding: 0;
+    }
+
+    .middleText {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Arial, sans-serif;
+        margin: 0; /* Add this line to remove margin */
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 0;
+    }
+
+
+    .middleText2 {
+        color: black;
+        font-size: 18px;
+        font-weight: 500;
+        font-family: Arial, sans-serif;
+        margin-top: 37px;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-weight: bold;
+    }
+
+
+    .button {
+        position: relative;
+        margin: 0;
+        height: 35px;
+        margin-left: 5px;
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        background-color: #FF5F1F;
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
 </style>
